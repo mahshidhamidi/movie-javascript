@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tags.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="search-container">
+            <h1>Search for Movies</h1>
+            <input type="text" id="search-input" placeholder="Input your favorite movie...">
+            <button onclick="doSearch()">Search</button>
+        </div>
+
+        <div id="search-results"></div>
+
+        <div class="wrapper">
+            <div class="inner">
+                <form id="rating-form">
+                    <input type="hidden" name="movie-image" id="movie-image">
+                    <input type="hidden" name="movie-director" id="movie-director">
+                    <input type="hidden" name="movie-year" id="movie-year">
+
+                    <h3>Rating the movie</h3>
+                    <div class="form-group">
+                        <div class="form-wrapper">
+                            <label for="movie-name">Movie name : </label>
+                            <input disabled class="form-control" type="text" name="movie-name" id="movie-name"><br>
+                        </div>
+                    </div>
+
+                    <label for="rating">Rating :</label>
+                    <div class="star-rating">
+                        <input type="radio" name="rating" id="rating-5" value="5">
+                        <label for="rating-5">★</label>
+                        <input type="radio" name="rating" id="rating-4" value="4">
+                        <label for="rating-4">★</label>
+                        <input type="radio" name="rating" id="rating-3" value="3">
+                        <label for="rating-3">★</label>
+                        <input type="radio" name="rating" id="rating-2" value="2">
+                        <label for="rating-2">★</label>
+                        <input type="radio" name="rating" id="rating-1" value="1">
+                        <label for="rating-1">★</label>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-wrapper">
+                            <label for="comment">Comment : </label>
+                            <textarea class="form-control" name="comment" id="movie-comment" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <button onclick="goToTop()" id="goToTopBtn" class="scroll-top" title="Go to top">
+        <i class="material-icons">expand_less</i>
+    </button>
+
+
+
+
+
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
